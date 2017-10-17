@@ -3,6 +3,10 @@ Lesson 6: Problem Set: Working with Two Variables
 Josh Goldberg
 October 15, 2017
 
+``` r
+knitr::opts_knit$set(base.url='https://github.com/.../raw/.../')
+```
+
 #### *Load Libraries*
 
 ``` r
@@ -46,7 +50,7 @@ ggplot(aes(x = x, y = price), data = diamonds) +
   ggtitle("Diamond Price vs. Length", subtitle = "Positive Exponential Relationship; Some Outliers")
 ```
 
-![](https://github.com/GoldbergData/knitr/raw/master/inst/examples/Problem_Set_Two_Variables_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-3-1.png)
+![](https://github.com/.../raw/.../Problem_Set_Two_Variables_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-3-1.png)
 
 #### **2. Findings**
 
@@ -120,7 +124,7 @@ ggplot(aes(x = depth, y = price), data = diamonds) +
   scale_x_continuous(breaks = seq(50, 80, 2))
 ```
 
-![](https://github.com/GoldbergData/knitr/raw/master/inst/examples/Problem_Set_Two_Variables_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-5-1.png)
+![](https://github.com/.../raw/.../Problem_Set_Two_Variables_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-5-1.png)
 
 #### **5. Typical Depth Range**
 
@@ -160,7 +164,7 @@ ggplot(aes(x = carat, y = price), data = diamonds) +
 
     ## Warning: Removed 926 rows containing missing values (geom_point).
 
-![](https://github.com/GoldbergData/knitr/raw/master/inst/examples/Problem_Set_Two_Variables_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-7-1.png)
+![](https://github.com/.../raw/.../Problem_Set_Two_Variables_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-7-1.png)
 
 #### **9. Price vs. Volume**
 
@@ -176,7 +180,7 @@ ggplot(aes(x = volume, y = price), data = diamonds) +
   ggtitle("Diamond Price vs. Volume")
 ```
 
-![](https://github.com/GoldbergData/knitr/raw/master/inst/examples/Problem_Set_Two_Variables_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-8-1.png)
+![](https://github.com/.../raw/.../Problem_Set_Two_Variables_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-8-1.png)
 
 #### **10. Findings - Price vs. Volume**
 
@@ -217,7 +221,7 @@ ggplot(aes(x = volume, y = price),
   geom_smooth(method = "lm")
 ```
 
-![](https://github.com/GoldbergData/knitr/raw/master/inst/examples/Problem_Set_Two_Variables_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-10-1.png)
+![](https://github.com/.../raw/.../Problem_Set_Two_Variables_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-10-1.png)
 
 ##### *12.1 Reflect*
 
@@ -287,7 +291,7 @@ plot2 <- ggplot(aes(x = color, y = mean_price, fill = color), data = diamonds_mp
 grid.arrange(plot1, plot2, nrow = 1)
 ```
 
-![](https://github.com/GoldbergData/knitr/raw/master/inst/examples/Problem_Set_Two_Variables_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-12-1.png)
+![](https://github.com/.../raw/.../Problem_Set_Two_Variables_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-12-1.png)
 
 ##### *14.1 Findings*
 
