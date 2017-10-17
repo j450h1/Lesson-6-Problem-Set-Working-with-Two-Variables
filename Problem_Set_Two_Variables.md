@@ -52,7 +52,7 @@ ggplot(aes(x = x, y = price), data = diamonds) +
   ggtitle("Diamond Price vs. Length", subtitle = "Positive Exponential Relationship; Some Outliers")
 ```
 
-![](https://github.com/.../raw/.../Problem_Set_Two_Variables_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-3-1.png)
+![](https://github.com/j450h1/Lesson-6-Problem-Set-Working-with-Two-Variables/Problem_Set_Two_Variables_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-3-1.png)
 
 #### **2. Findings**
 
