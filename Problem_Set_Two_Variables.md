@@ -7,16 +7,17 @@ October 15, 2017
 
 ``` r
  for (i in list.files(pattern = '\\.R(tex|md|html|rst)')) {
-    message(i)
+   message(i)
    stopifnot(identical(system(sprintf('knit %s', i)), 0L))
-   cmd = if (i == 'knitr-minimal.Rmd') {
-     sprintf("Rscript -e 'library(knitr);opts_knit$set(base.url=\"https://github.com/yihui/knitr/raw/master/inst/examples/\");opts_chunk$set(fig.path=\"\");knit(\"%s\")'", i)
+   cmd = if (i == 'knitr-Problem_Set_Two_Variables.Rmd') {
+     sprintf("Rscript -e 'library(knitr);opts_knit$set(base.url=\"https://github.com/GoldbergData/knitr/raw/master/inst/examples/\"
+             ;opts_chunk$set(fig.path=\"\");knit(\"%s\")'", i)
    } else {
      sprintf('knit %s', i)
    }
    stopifnot(identical(system(cmd), 0L))
-    flush.console()
- }
+   flush.console()
+}
 
 library(ggplot2)
 library(dplyr)
