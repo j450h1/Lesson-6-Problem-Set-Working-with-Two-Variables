@@ -31,6 +31,8 @@ library(dplyr)
 library(gridExtra)
 ```
 
+    ## Warning: package 'gridExtra' was built under R version 3.4.1
+
     ## 
     ## Attaching package: 'gridExtra'
 
